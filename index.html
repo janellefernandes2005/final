@@ -3,29 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Weather Video Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #f0f8ff;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .video-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             text-align: center;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
+        .video-card h3 {
+            color: #34495e;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        video {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 8px;
+            background: #000;
+        }
+        .file-info {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: 8px;
+        }
+        .category {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #bdc3c7;
+        }
+        .category h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Site</h1>
-    <p>Your GitHub Pages site is working!</p>
-    
-    <!-- You can add your images here later -->
-    <div id="images">
-        <p>Add your images here once you upload them to your repository.</p>
+    <h1>Weather Video Gallery</h1>
+
+    <div class="category">
+        <h2>Today's Videos</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <h3>Snow Evening</h3>
+                <video controls>
+                    <source src="snow.evening.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">1,237 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Rain Night</h3>
+                <video controls>
+                    <source src="rain.night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">3,908 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Snow Morning (1)</h3>
+                <video controls>
+                    <source src="SNOW MORNING (1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">637 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Spring Evening</h3>
+                <video controls>
+                    <source src="spring evening.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">1,908 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Spring Afternoon</h3>
+                <video controls>
+                    <source src="spring afternoon.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">1,300 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Marine</h3>
+                <video controls>
+                    <source src="marine.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">3,184 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Spring Morning</h3>
+                <video controls>
+                    <source src="SPRING MORNING.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">5,304 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Spring Night</h3>
+                <video controls>
+                    <source src="SPRING NIGHT.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">2,581 KB · MP4</div>
+            </div>
+        </div>
     </div>
+
+    <div class="category">
+        <h2>Yesterday's Videos</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <h3>Summer Afternoon</h3>
+                <video controls>
+                    <source src="SUMMER AFTERNOON.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">1,222 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Summer Evening</h3>
+                <video controls>
+                    <source src="summer evening.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">1,303 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Snow Afternoon</h3>
+                <video controls>
+                    <source src="snow afternoon.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">947 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Rain Evening</h3>
+                <video controls>
+                    <source src="rain evening.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">2,153 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Rain Morning</h3>
+                <video controls>
+                    <source src="rain morning.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">2,022 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Rain Afternoon</h3>
+                <video controls>
+                    <source src="rain afternoon.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">5,841 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Snow Night</h3>
+                <video controls>
+                    <source src="snow night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">1,088 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Summer Night</h3>
+                <video controls>
+                    <source src="SUMMER NIGHT.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">1,237 KB · MP4</div>
+            </div>
+
+            <div class="video-card">
+                <h3>Summer Morning</h3>
+                <video controls>
+                    <source src="SUMMER MORNING.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="file-info">1,287 KB · MP4</div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
